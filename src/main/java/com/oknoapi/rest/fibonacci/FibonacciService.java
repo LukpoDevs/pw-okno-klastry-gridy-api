@@ -1,4 +1,4 @@
-package com.oknoapi.rest.host.fibonacci;
+package com.oknoapi.rest.fibonacci;
 
 import org.springframework.stereotype.Service;
 

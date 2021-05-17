@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.oknoapi.rest.fibonacci.FibonacciService;
 import com.oknoapi.rest.host.HostService;
-import com.oknoapi.rest.host.fibonacci.FibonacciService;
 
 @RestController
 public class OknoController {
