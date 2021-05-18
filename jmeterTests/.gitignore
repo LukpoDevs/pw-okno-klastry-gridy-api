@@ -1,0 +1,4 @@
+/backups/
+/bin/*.log
+/bin/jmeterResults.csv
+/bin/htmlReport/
