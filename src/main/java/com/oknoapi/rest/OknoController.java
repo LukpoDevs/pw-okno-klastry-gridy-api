@@ -27,9 +27,9 @@ public class OknoController {
 				"N-ta liczba Fibonacciego: " + FibonacciService.calculateFibonacci(n);
 	}
 
-	@GetMapping(path = "/okno-api-bean")
+	@GetMapping(path = "/healthz")
 	public OknoBean helloWorldBean() {
-		return new OknoBean("Test K8");
+		return new OknoBean("{ \"helath\": \"true\" }");
 	}
 
 }
