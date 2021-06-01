@@ -16,19 +16,19 @@ public class OknoController {
 	private HostService hostService;
 	
 	@GetMapping(path = "/")
-	public String imUpAndRunning() {
+	public String getHome() {
 		return "Przetestuj API: <strong>localhost:8080/okno-api/n</strong> ,gdzie n to n-ty wyraz ciągu Fibonacciego";
 	}
 
 	@GetMapping(path = "/okno-api/{n}")
 	@ResponseBody
-	public String helloWorld(@PathVariable int n) {			
+	public String getFibonacciAndHost(@PathVariable int n) {			
 		return "Host aplikacji Spring: " + hostService.retrieveInstanceInfo() + "<br>" +
 				"N-ta liczba Fibonacciego: " + FibonacciService.calculateFibonacci(n);
 	}
 
 	@GetMapping(path = "/healthz")
-	public OknoBean helloWorldBean() {
+	public OknoBean isHealthy() {
 		return new OknoBean("{ \"helath\": \"true\" }");
 	}
 
